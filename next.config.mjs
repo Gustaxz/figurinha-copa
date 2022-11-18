@@ -11,8 +11,9 @@ const nextConfig = {
     ]
   },
   images: {
-    domains: ["localhost"]
-  }
+    unoptimized: true
+  },
+  assetPrefix: './',
 }
 
 module.exports = nextConfig
