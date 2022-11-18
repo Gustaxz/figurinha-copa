@@ -2,7 +2,8 @@ import { NextApiRequest, NextApiResponse } from "next";
 
 import { readFile } from "fs/promises"
 
-const isDev = !process.env.AWS_REGION
+// const isDev = !process.env.AWS_REGION
+const isDev = true
 
 export default async function cardpreview(req: NextApiRequest, res: NextApiResponse) {
 
