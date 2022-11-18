@@ -93,7 +93,7 @@ export default function Home() {
 		}
 	}
 
-	const onSubmit: SubmitHandler<IFormFields> = async (data) => {
+	const onSubmit: SubmitHandler<IFormFields> = async (data: any) => {
 		const fieldNull = Object.keys(data).map((e) => data[e] === "" || data[e] === "none")
 
 		console.log(selectedImage)
